@@ -61,7 +61,7 @@ The pins are configured as follows:
 
 The prototype demo is presented in the picture below.
 
-<img src="images/MatrixRGB_Setup.jpg" alt="Hardware Setup" height="250"/>
+<img src="images/MatrixRGB_Setup.jpg" alt="Hardware Setup" height="500"/>
 
 ## Demo Usage:
 

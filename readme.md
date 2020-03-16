@@ -11,16 +11,11 @@ The default text is "Welcome to Microchip !". The text message can be updated vi
 
 The MCU uses the high frequency internal oscilator (HFINTOSC), and the clock is set to 32 MHz. Watchdog Timer is not used in this demo, so it is disabled.
 
-MCC configurations - System Module
-
-Internal Oscillator
+MCC configurations - System Module (Internal Oscillator and WWDT)
 
 * Oscillator Select: HFINTOSC
 * HF Internal Clock: 32_MHz
 * Clock Divider: 1
-
-WWDT
-
 * Watchdog Timer Enable: WDT Disabled, SWDTEN is ignored
 
 MSSP1 is used for communicating with the Matrix RGB Click board. It is set to SPI Master, with input data sampled at middle, SPI Mode 0, and 8 MHz clock.

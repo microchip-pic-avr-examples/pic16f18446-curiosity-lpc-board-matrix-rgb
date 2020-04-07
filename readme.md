@@ -18,16 +18,23 @@ MCC configurations - System Module (Internal Oscillator and WWDT)
 * Clock Divider: 1
 * Watchdog Timer Enable: WDT Disabled, SWDTEN is ignored
 
+The settings are presented in the figure below.
+
+<img src="images/SystemModule_Settings.png" alt="System Module Settings"/>
+
 MSSP1 is used for communicating with the Matrix RGB Click board. It is set to SPI Master, with input data sampled at middle, SPI Mode 0, and 8 MHz clock.
 
 MCC configurations - MSSP1 Settings
 
-* Mode: SPI Master
-* Enable MSSP: checked
+* Serial Protocol: SPI
+* Mode: Master
+* SPI Mode: SPI Mode 0
 * Input Data Sampled at: Middle
-* Clock Polarity: Idle:Low, Active:High
-* Clock Edge: Active to Idle
 * Clock Source: FOSC/4
+
+The settings are presented in the figure below.
+
+<img src="images/MSSP_Settings.jpg" alt="MSSP Settings"/>
 
 EUSART1 is used to receive the input text string that is to be displayed on the RGB Matrix. It is set to asynchronous mode (UART), with 9600 baud rate, and a software receive buffer of 64 Bytes.
 
@@ -45,6 +52,10 @@ MCC configurations - EUSART1 Settings
 * Software Transmit Buffer Size: 8
 * Software Receive Buffer Size: 64
 
+The settings are presented in the figure below.
+
+<img src="images/EUSART_Settings.png" alt="EUSART Settings"/>
+
 MCC configurations - Pin Manager Settings
 
 The pins are configured as follows:
@@ -58,6 +69,11 @@ The pins are configured as follows:
 * Matrix RGB RST is connected to GPIO output RA4
 * Matrix RGB SLP is connected to GPIO output RC5
 * Matrix RGB CS is connected to GPIO output RC6
+
+The settings are presented in the figure below.
+
+<img src="images/PinModule_Settings.png" alt="Pin Module Settings"/>
+<img src="images/PinManager_Settings.png" alt="Pin Manager Settings"/>
 
 The prototype demo is presented in the picture below.
 

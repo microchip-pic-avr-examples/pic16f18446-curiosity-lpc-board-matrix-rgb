@@ -34,7 +34,7 @@ MCC configurations - MSSP1 Settings
 
 The settings are presented in the figure below.
 
-<img src="images/MSSP_Settings.jpg" alt="MSSP Settings"/>
+<img src="images/MSSP_Settings.JPG" alt="MSSP Settings"/>
 
 EUSART1 is used to receive the input text string that is to be displayed on the RGB Matrix. It is set to asynchronous mode (UART), with 9600 baud rate, and a software receive buffer of 64 Bytes.
 

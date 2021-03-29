@@ -30,7 +30,7 @@ MCC configurations - System Module (Internal Oscillator and WWDT)
 
 The settings are presented in the figure below.
 
-<img src="images/SystemModule_Settings.png" alt="System Module Settings"/>
+<br><img src="images/SystemModule_Settings.png" width="600">
 
 MSSP1 is used for communicating with the Matrix RGB Click board. It is set to SPI Master, with input data sampled at middle, SPI Mode 0, and 8 MHz clock.
 
@@ -44,7 +44,7 @@ MCC configurations - MSSP1 Settings
 
 The settings are presented in the figure below.
 
-<img src="images/MSSP_Settings.JPG" alt="MSSP Settings"/>
+<br><img src="images/MSSP_Settings.JPG" width="600">
 
 EUSART1 is used to receive the input text string that is to be displayed on the RGB Matrix. It is set to asynchronous mode (UART), with 9600 baud rate, and a software receive buffer of 64 Bytes.
 
@@ -64,7 +64,7 @@ MCC configurations - EUSART1 Settings
 
 The settings are presented in the figure below.
 
-<img src="images/EUSART_Settings.png" alt="EUSART Settings"/>
+<br><img src="images/EUSART_Settings.png" width="600">
 
 MCC configurations - Pin Manager Settings
 
@@ -82,12 +82,12 @@ The pins are configured as follows:
 
 The settings are presented in the figure below.
 
-<img src="images/PinModule_Settings.png" alt="Pin Module Settings"/>
-<img src="images/PinManager_Settings.png" alt="Pin Manager Settings"/>
+<br><img src="images/PinModule_Settings.png" width="600">
+<br><img src="images/PinManager_Settings.png" width="600">
 
 The prototype demo is presented in the picture below.
 
-<img src="images/MatrixRGB_Setup.jpg" alt="Hardware Setup" height="500"/>
+<br><img src="images/MatrixRGB_Setup.jpg" width="600">
 
 ## Demo Usage
 

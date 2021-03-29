@@ -4,10 +4,10 @@
     "content": {
         "metaDataVersion": "1.1.0",
         "name": "com.microchip.mcu8.mplabx.project.pic16f18446-curiosity-lpc-board-matrix-rgb",
-        "version": "1.1.3",
-        "displayName": "32x32 RGB LED matrix",
+        "version": "1.0.0",
+        "displayName": "32x32 RGB LED Matrix Messages Demo Using EUSART and SPI",
         "projectName": "pic16f18446-curiosity-lpc-board-matrix-rgb",
-        "shortDescription": "This project shows how to use UART and SPI to update a message text scrolling a 32x32 RGB matrix.",
+        "shortDescription": "This project shows how to use EUSART and SPI to update a message text scrolling a 32x32 RGB matrix.",
         "ide": {
             "name": "MPLAB X",
             "semverRange": ">=5.30.0"
@@ -39,19 +39,15 @@
         "author": "Microchip",
         "subcategories": [
             [
-               "Peripherals", "EUSART"
-            ],
-            [
-                "Peripherals", "SPI"
+               "Peripherals",
+			   "EUSART"
             ]
         ],
         "peripherals": [
-            "EUSART",
-            "SPI"
+            "EUSART"
         ],
         "keywords": [
-            "RGB LED matrix",
-            "Matrix RGB Click board"
+            "RGB LED matrix"
         ],
 		"additionalData": {
 			"longDescription": {

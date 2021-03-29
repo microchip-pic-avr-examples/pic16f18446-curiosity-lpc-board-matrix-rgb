@@ -1,12 +1,22 @@
-<div id="readme" class="Box-body readme blob js-code-block-container">
-  <article class="markdown-body entry-content p-3 p-md-6" itemprop="text"><p><a href="https://www.microchip.com" rel="nofollow"><img src="https://camo.githubusercontent.com/5fb5505f69a28ff407841612dfe2b7004f210594/68747470733a2f2f636c6475702e636f6d2f553071684c7742696a462e706e67" alt="MCHP" data-canonical-src="https://cldup.com/U0qhLwBijF.png" style="max-width:100%;"></a></p>
+[![MCHP](images/microchip.png)](https://www.microchip.com)
 
-# PIC16F18446 Matrix RGB
+# 32x32 RGB LED Matrix Messages Demo Using EUSART and SPI
 
-## Objective:
 Using the PIC16F18446 to control the 32x32 RGB LED matrix via the Matrix RGB Click board. A text message scrolls on the RGB display.
 
-## Demo Configuration:
+## Software Used
+- MPLAB® X IDE 5.30 or newer [(microchip.com/mplab/mplab-x-ide)](http://www.microchip.com/mplab/mplab-x-ide)
+- MPLAB® XC8 2.10 or a newer compiler [(microchip.com/mplab/compilers)](http://www.microchip.com/mplab/compilers)
+- MPLAB® Code Configurator (MCC) 3.95.0 or newer [(microchip.com/mplab/mplab-code-configurator)](https://www.microchip.com/mplab/mplab-code-configurator)
+- MPLAB® Code Configurator (MCC) Device Libraries 8-bit AVR MCUs 2.3.0 or newer [(microchip.com/mplab/mplab-code-configurator)](https://www.microchip.com/mplab/mplab-code-configurator)
+- PIC16F1xxxx DFP 1.2.99 or newer Device Pack
+
+## Hardware Used
+- [PIC16F18446 Microcontroller (PDIP pin package)](https://www.microchip.com/wwwproducts/en/PIC16F18446)
+- [Curiosity Development Board](https://www.microchip.com/DevelopmentTools/ProductDetails/DM164137)
+- [MikroElektronika™ Matrix RGB panel kit](https://www.mikroe.com/matrix-rgb-panel-kit)
+
+## Setup
 The default text is "Welcome to Microchip !". The text message can be updated via UART, by simply sending a new string, ending in '\n'. The PIC's EUSART is configured to use the 9600 baud rate, but that can easily be changed from MCC settings.
 
 The MCU uses the high frequency internal oscilator (HFINTOSC), and the clock is set to 32 MHz. Watchdog Timer is not used in this demo, so it is disabled.
@@ -79,7 +89,7 @@ The prototype demo is presented in the picture below.
 
 <img src="images/MatrixRGB_Setup.jpg" alt="Hardware Setup" height="500"/>
 
-## Demo Usage:
+## Demo Usage
 
 1. Plug the PIC16F18446 MCU into its socket on the Curiosity board
 2. Plug the Matrix RGB click into the mikroBUS slot of the Curiosity board
@@ -89,21 +99,6 @@ The prototype demo is presented in the picture below.
 6. Build demo firmware and load the generated hex file onto the PIC16F18446 MCU. When the demo firmware is loaded, the "Welcome to Microchip !" text starts scrolling on the RGB Matrix.
 7. The text string can be changed via UART. For this, an USB to UART adapter can be used. Its GND must be connected to the GND on Curiosity, and its TX must be connected to the RX (pin RC0) on Curiosity. Then a terminal program can be used for entering the text. The sent text must end with the LF ('\n') character.
 
-## Required Tools:
-
-Hardware tools:
-
-* PIC16F18446 (20-pin, PDIP) MCU
-* The Curiosity development board
-* 32x32 RGB Matrix display
-* The Matrix RGB click board from MikroElektronika™
-
-Software tools:
-
-* MPLAB® X IDE v5.30
-* MPLAB® Code Configurator (Plugin) v3.95
-* XC8® Compiler v2.10
-* Microcontrollers and peripherals Library v1.79
 
 ## Conclusion:
 
